@@ -1,19 +1,16 @@
 def merge_the_tools(string, k):
 
-    index = 0
-    for i in string:
-        if index % k == 0:
+    for i, character in enumerate(string):
+        if i % k == 0:
             sub_set = set()
             sub_string = ''
 
-        if i not in sub_set:
-            sub_set.add(i)
-            sub_string += i
+        if character not in sub_set:
+            sub_set.add(character)
+            sub_string += character
 
-        if index % k == k - 1:
+        if i % k == k - 1:
             print(sub_string)
-
-        index += 1
 
 
 if __name__ == '__main__':
