@@ -1,3 +1,4 @@
+#!/usr/bin/python3
 watch_url = input('Enter original URL : ')
 
 video_code = watch_url.split('watch?v=')[1]
