@@ -55,19 +55,19 @@ print(my_list)
 Dictionary Comprehensions
 """
 names = ['Bruce', 'Clark', 'Peter', 'Logan', 'Wade']
-heros = ['Batman', 'Superman', 'Spiderman', 'Wolverine', 'Deadpool']
+heroes = ['Batman', 'Superman', 'Spiderman', 'Wolverine', 'Deadpool']
 # works on python2 as expected but not on python3
-print(zip(names, heros))
+print(zip(names, heroes))
 
 my_dict = {}
-for name, hero in zip(names, heros):
+for name, hero in zip(names, heroes):
     my_dict[name] = hero
 print(my_dict)
 
-my_dict = {name: hero for name, hero in zip(names, heros)}
+my_dict = {name: hero for name, hero in zip(names, heroes)}
 print(my_dict)
 
-my_dict = {name: hero for name, hero in zip(names, heros) if name != 'Peter'}
+my_dict = {name: hero for name, hero in zip(names, heroes) if name != 'Peter'}
 print(my_dict)
 
 
