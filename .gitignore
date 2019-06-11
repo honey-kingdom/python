@@ -1,2 +1,5 @@
 __pycache__
 *.log
+
+*target.txt
+*output.txt
